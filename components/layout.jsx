@@ -1,10 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
-import Link from 'next/link';
+import Header from './Header';
 
-const name = 'Aaron Mullan';
 export const siteTitle = 'Midwell';
 
 export default function Layout({ children, home }) {
@@ -12,11 +10,19 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Domine"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sen"
+        />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Learn how to clone another website using Next.js"
         />
-            <meta
+        <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
             siteTitle,
@@ -25,15 +31,8 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-   
+      <Header />
       <main>{children}</main>
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            ← Back to home
-          </Link>
-        </div>
-      )}
     </div>
   );
 }

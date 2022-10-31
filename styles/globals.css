@@ -18,12 +18,33 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #009AA8;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+h1, h2, h3, p, a {
+  color: #525254;
+  font-family: 'Domine'
+}
+h1, h2, h3 {
+  font-family: 'Domine'
+}
+
+p, a {
+  font-family: 'Sen'
+}
+
+h1, h2 {
+  font-size: 49px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 32px;
 }
 
 /* @media (prefers-color-scheme: dark) {
