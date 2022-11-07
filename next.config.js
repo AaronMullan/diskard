@@ -8,7 +8,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'placekitten.com',
         port: '',
-        pathname: '/200/200/**',
+        pathname: '/300/200/**',
       },
     ],
   },

@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
+import { slide as Menu } from 'react-burger-menu';
 import Button from './Button';
 import styles from './header.module.css';
 import HeaderLinks from './Headerlinks';
-import Burger from './Burger';
 
 export default function Header() {
   return (
@@ -14,6 +14,9 @@ export default function Header() {
       justifyContent: 'center',
       height: '80px',
       margin: '0px 20px',
+      h1: {
+        fontWeight: 'bold',
+      },
     }}
     >
       <header
@@ -27,19 +30,22 @@ export default function Header() {
           maxWidth: '1140px',
         }}
       >
-        <div className={styles.burgerLogo}>
-          <div>
-            <Burger />
+        <div style={{ display: 'flex', flexDirection: 'row' }}>
+          <div className={styles.bmBurgerButton}>
+            <Menu>
+              <a id="home" className="menu-item" href="/">Home</a>
+              <a id="about" className="menu-item" href="/about">About</a>
+              <a id="contact" className="menu-item" href="/contact">Contact</a>
+            </Menu>
           </div>
           <div style={{
             height: '2rem', display: 'inline-block',
           }}
           >
             <Image
-              src="/images/logo.png"
+              src="/images/DISKARD.png"
               height={32}
               width={120}
-              objectFit="cover"
               alt="Ridwell Logo"
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
