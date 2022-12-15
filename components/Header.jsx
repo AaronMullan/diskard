@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu';
 import Button from './Button';
 import styles from './header.module.css';
@@ -42,15 +43,17 @@ export default function Header() {
             height: '2rem', display: 'inline-block',
           }}
           >
-            <Image
-              src="/images/DISKARD.png"
-              height={32}
-              width={120}
-              alt="Ridwell Logo"
-              sizes="(max-width: 768px) 100vw,
+            <Link href="/">
+              <Image
+                src="/images/DISKARD.png"
+                height={32}
+                width={120}
+                alt="Diskard Logo"
+                sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
-            />
+              />
+            </Link>
           </div>
         </div>
         <HeaderLinks />

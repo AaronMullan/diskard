@@ -4,13 +4,22 @@ import Image from 'next/image';
 export default function ContactBar() {
   const contactCardData = [
     {
-      text: 'Fill out our', linkText: 'contact form', href: '/category/contact', image: '/images/form.svg',
+      text: 'Fill out our',
+      linkText: 'contact form',
+      href: '/category/contact',
+      image: '/images/form.svg',
     },
     {
-      text: 'Email us', linkText: 'help@diskard.com', href: 'mailto:help@diskard.com', image: '/images/mail.svg',
+      text: 'Email us',
+      linkText: 'help@diskard.com',
+      href: 'mailto:help@diskard.com',
+      image: '/images/mail.svg',
     },
     {
-      text: 'Text us', linkText: '503-555-1212', href: 'sms:+15035551212', image: '/images/text.svg',
+      text: 'Text us',
+      linkText: '503-555-1212',
+      href: 'sms:+15035551212',
+      image: '/images/text.svg',
     },
   ];
 
@@ -34,7 +43,6 @@ export default function ContactBar() {
 function ContactCard({
   text, href, linkText, image,
 }) {
-  console.log('image', image, 'text', text);
   return (
     <div>
       <a href={href}>

@@ -1,3 +1,7 @@
+.header {
+  display: flex
+}
+
 .headerlinks {
    min-width: 600px;
    display: flex;

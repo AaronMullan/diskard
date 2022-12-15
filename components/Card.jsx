@@ -27,8 +27,8 @@ export default function Card({ title, image }) {
         </div>
         <Image
           src={image}
-          width={296}
-          height={200}
+          width={300}
+          height={300}
           alt={title}
         />
       </div>
