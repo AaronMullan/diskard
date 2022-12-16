@@ -23,7 +23,7 @@ export default function Hero({
         />
       </div>
       <div style={{
-        padding: '40px', width: '50%', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center',
+        padding: '40px', width: '50%', textAlign: 'left', display: 'flex', flexDirection: 'column', justifyContent: 'center',
       }}
       >
         <h3>{headline}</h3>

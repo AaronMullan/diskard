@@ -7,7 +7,7 @@ export default function HeaderLinks({ isFooter }) {
     { text: 'How it works', link: '/#how-it-works' },
     { text: 'What we bring', link: '/categories' },
     { text: 'Pricing', link: 'pricing' },
-    { text: 'Transparency', link: 'transparency' },
+    { text: 'Opacity', link: 'opacity' },
     { text: 'Questions?', link: 'questions' }];
 
   const color = isFooter ? 'white' : '#00bcaa';
