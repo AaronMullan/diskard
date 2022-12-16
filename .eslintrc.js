@@ -18,5 +18,6 @@ module.exports = {
   ],
   rules: {
     'max-len': [2, { code: 120 }],
+    'react/prop-types': 0,
   },
 };

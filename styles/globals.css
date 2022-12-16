@@ -30,7 +30,7 @@ time, mark, audio, video {
 }
 
 a {
-  color: #0070f3;
+  /* color: #0070f3; */
   text-decoration: none;
 }
 
@@ -44,13 +44,8 @@ img {
 }
 
 h1, h2, h3, p {
-  color: #525254;
+  /* color: #525254; */
   font-family: 'Domine'
-}
-
-  
-p {
-  
 }
 
 h1, h2, h3 {
@@ -68,22 +63,14 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
+  line-height: 3rem;
 }
 
 h3 {
   font-size: 32px;
+  margin-bottom: 1rem;
 }
 .linkText p {
   color: #009AA8;
   font-weight: bold;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-} */

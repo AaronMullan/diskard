@@ -43,6 +43,9 @@ export default function ContactBar() {
 function ContactCard({
   text, href, linkText, image,
 }) {
+  ContactCard.propTypes = {
+    text: Proptypes.string,
+  };
   return (
     <div>
       <a href={href}>

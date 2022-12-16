@@ -2,8 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import styles from './layout.module.css';
 import Header from './Header';
+import Footer from './Footer';
 
-export const siteTitle = 'Midwell';
+export const siteTitle = 'Diskard';
 
 export default function Layout({ children, home }) {
   return (
@@ -33,6 +34,7 @@ export default function Layout({ children, home }) {
       </Head>
       <Header />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }

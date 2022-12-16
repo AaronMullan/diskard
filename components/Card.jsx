@@ -7,7 +7,6 @@ export default function Card({ title, image }) {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      // height: '364px',
       boxShadow: '0 2px 5px 0 rgb(0 0 0 / 46%)',
       minWidth: '280px',
       maxWidth: '400px',

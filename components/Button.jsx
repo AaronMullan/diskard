@@ -1,8 +1,11 @@
 import React from 'react';
-import styles from './button.module.css';
 
-export default function Button({ buttonText }) {
+import getButtonStyles from './buttonStyles';
+
+export default function Button({ buttonText, isLight }) {
+  const buttonStyles = getButtonStyles({ isLight });
+
   return (
-    <button type="button" className={styles.btn}>{buttonText}</button>
+    <button type="button" style={buttonStyles} className="button">{buttonText}</button>
   );
 }

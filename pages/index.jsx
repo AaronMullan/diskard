@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { gsap } from 'gsap';
 import Layout, { siteTitle } from '../components/layout';
 import Hero from '../components/Hero';
+import Blade from '../components/Blade';
+import Callout from '../components/Callout';
 
 export default function Home() {
   const heroRef = useRef();
@@ -33,15 +35,34 @@ export default function Home() {
       </div>
       <div style={{
         textAlign: 'center',
-        paddingTop: '2rem',
+        padding: '2rem',
         font: 'system',
         textDecoration: 'underline',
         textDecorationColor: '#F5660040',
-        textDecorationThickness: '.5rem',
+        textDecorationThickness: '.3rem',
+        textUnderlineOffset: '1rem',
       }}
       >
-        <h2 id="how-it-works">HERE&apos;S HOW IT WORKS</h2>
+        <h2 style={{ color: '#525254' }} id="how-it-works">HERE&apos;S HOW IT WORKS</h2>
       </div>
+      <Blade
+        image="/images/clothesPile.png"
+        headline="AI-driven Insights"
+        text="Our proprietary AI provides Diskârd users with customized garbage deliveries on their own schedule."
+        reverse
+      />
+      <Blade
+        image="/images/carryingBag.png"
+        headline="Exclusive Vendors"
+        text="We partner with best-in-class trash providers to source artisinal debris and detritus."
+      />
+      <Blade
+        image="/images/walkingAway.png"
+        headline="Feel Good About Your Garbage Supply"
+        text="Diskârd is flipping the trash collection industry on it's head, so you can feel great about where your garbage comes from."
+        reverse
+      />
+      <Callout />
     </Layout>
   );
 }
