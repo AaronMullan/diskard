@@ -16,7 +16,7 @@ export default function Categories() {
       <Blade
         image="/images/clothesPile.png"
         headline="Your neighbors already signed up"
-        text="What are a few measly dollars compared to the status of the Diskârd box on your porch? You gotta spend money to make money, right?"
+        text="What are a few measly dollars compared to the status of the Diskârd box on your porch? You gotta spend money to make money, let's not bicker and argue over who's fleecing who."
         reverse
       />
       <Blade

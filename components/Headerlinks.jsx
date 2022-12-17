@@ -18,14 +18,14 @@ export default function HeaderLinks({ isFooter }) {
         color: isFooter ? 'white' : '#00bcaa',
         display: 'flex',
         flexDirection: isFooter ? 'column' : 'row',
-        minWidth: '600px',
+        minWidth: !isFooter ? '450px' : null,
         justifyContent: 'space-between',
         margin: '10px',
         lineHeight: '2em',
       }}
     >
       {headerLinkData.map((element) => (
-        <Link href={element.link} style={{ color }}>
+        <Link href={element.link} style={{ color }} key={element.link}>
           {element.text}
         </Link>
       ))}

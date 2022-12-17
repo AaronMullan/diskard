@@ -1,10 +1,10 @@
 import React from 'react';
 import HeaderLinks from './Headerlinks';
 
-export default function Header() {
+export default function Footer() {
   return (
     <div style={{
-      padding: '5vh 20vw',
+      padding: '5vh 15vw',
       backgroundColor: '#2c2323',
       color: 'white',
       display: 'grid',
@@ -17,8 +17,8 @@ export default function Header() {
         // width: '50%',
         display: 'flex',
         flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
+        alignItems: 'start',
+        justifyContent: 'start',
         margin: '0px',
         backgroundColor: '#2c2323',
 

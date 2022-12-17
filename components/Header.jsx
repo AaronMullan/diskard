@@ -5,6 +5,7 @@ import { slide as Menu } from 'react-burger-menu';
 import Button from './Button';
 import styles from './header.module.css';
 import HeaderLinks from './Headerlinks';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 export default function Header() {
   return (
