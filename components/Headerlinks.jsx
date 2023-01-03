@@ -9,7 +9,6 @@ export default function HeaderLinks({ isFooter, isDesktop }) {
   //   { text: 'Pricing', link: 'pricing' },
   //   { text: 'Opacity', link: 'opacity' },
   //   { text: 'Questions?', link: 'questions' }];
-
   const color = isFooter ? 'white' : '#525254';
   return (
     <div
