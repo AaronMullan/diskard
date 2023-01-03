@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import React, { useEffect, useRef } from 'react';
 import Head from 'next/head';
 import { gsap } from 'gsap';
@@ -48,7 +49,7 @@ export default function Home() {
       <Blade
         image="/images/clothesPile.png"
         headline="AI-driven Insights"
-        text="Our proprietary AI provides Diskârd users with customized garbage deliveries on their own schedule."
+        text="Our proprietary AI provides Diskârd users with customized garbage deliveries on their own schedule.  Integrations with municipal and boutique garbage removal services ensure you're covered on trash day."
         reverse
       />
       <Blade

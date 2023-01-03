@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { slide as Menu } from 'react-burger-menu';
 import Button from './Button';
 import styles from './header.module.css';
-import HeaderLinks from './Headerlinks';
+import HeaderLinks from './HeaderLinks';
 import useMediaQuery from '../hooks/useMediaQuery';
+import HeaderLinksMobile from './HeaderLinksMobile';
 
 export default function Header() {
+  const isDesktop = (useMediaQuery('(min-width: 960px)'));
   return (
     <div style={{
       display: 'flex',
@@ -21,6 +23,14 @@ export default function Header() {
       },
     }}
     >
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Domine"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Sen"
+      />
       <header
         className={styles.header}
         style={{
@@ -29,19 +39,27 @@ export default function Header() {
           flexDirection: 'row',
           justifyContent: 'space-between',
           alignItems: 'center',
-          maxWidth: '1140px',
         }}
       >
         <div style={{ display: 'flex', flexDirection: 'row' }}>
-          <div className={styles.bmBurgerButton}>
-            <Menu>
-              <a id="home" className="menu-item" href="/">Home</a>
-              <a id="about" className="menu-item" href="/about">About</a>
-              <a id="contact" className="menu-item" href="/contact">Contact</a>
-            </Menu>
+          <div>
+            {!isDesktop && <HeaderLinksMobile isDesktop={isDesktop} /> }
+
           </div>
+          {/* <div style={{
+            height: '2rem', display: isDesktop ? 'none' : 'inline-block', paddingRight: '5px', flexBasis: '120px',
+          }}
+          >
+            <Image
+              src="/images/burger.svg"
+              height={36}
+              width={36}
+              alt="menu"
+            />
+
+          </div> */}
           <div style={{
-            height: '2rem', display: 'inline-block',
+            height: '2rem', width: '120px', display: 'inline-block', marginLeft: isDesktop ? null : '20px',
           }}
           >
             <Link href="/">
@@ -49,16 +67,14 @@ export default function Header() {
                 src="/images/DISKARD.png"
                 height={32}
                 width={120}
+                minWidth={120}
                 alt="Diskard Logo"
                 priority
-                sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
-              33vw"
               />
             </Link>
           </div>
         </div>
-        <HeaderLinks />
+        <HeaderLinks isDesktop={isDesktop} />
         <div>
           <Button buttonText="get started" />
         </div>

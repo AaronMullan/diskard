@@ -2,10 +2,15 @@ import React from 'react';
 
 import getButtonStyles from './buttonStyles';
 
-export default function Button({ buttonText, isLight, type }) {
+export default function Button({
+  buttonText, isLight, type, url,
+}) {
   const buttonStyles = getButtonStyles({ isLight });
+  const isSubmit = type === 'submit';
 
   return (
-    <button type={type === 'submit' ? 'submit' : 'button'} style={buttonStyles} className="button">{buttonText}</button>
+    isSubmit
+      ? <button type="submit" style={buttonStyles} className="button">{buttonText}</button>
+      : <button type="button" style={buttonStyles} className="button">{buttonText}</button>
   );
 }

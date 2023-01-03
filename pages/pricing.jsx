@@ -1,9 +1,7 @@
 /* eslint-disable max-len */
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import { gsap } from 'gsap';
 import Layout, { siteTitle } from '../components/layout';
-import Hero from '../components/Hero';
 import Blade from '../components/Blade';
 
 export default function Categories() {
@@ -20,9 +18,10 @@ export default function Categories() {
         reverse
       />
       <Blade
-        image="/images/carryingBag.png"
+        image="/images/garbodor.png"
         headline="Diskârd membership includes:"
-        text="Other garbage collection services actually REMOVE your collection. We respect your collection, and every week we have a featured category of bespoke additions. Recent highlights: 30 years of National Geographic magazines, multiple incomplete Monopoly games. "
+        text="Our exclusive license of Trashalanche technology from Garbodor Enterprises enables potentially devastating attacks, particularly valuable for endgame set pieces."
+        bladeStyles={{ backgroundColor: '#FFEADA' }}
       />
     </Layout>
   );

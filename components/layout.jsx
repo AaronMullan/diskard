@@ -11,14 +11,14 @@ export default function Layout({ children, home }) {
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Domine"
         />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Sen"
-        />
+        /> */}
         <meta
           name="description"
           content="Learn how to clone another website using Next.js"
