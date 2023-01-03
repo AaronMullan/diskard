@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Button from './Button';
 import styles from './header.module.css';
-import HeaderLinks from './HeaderLinkss';
+import HeaderLinks from './HeaderLinks';
 import useMediaQuery from '../hooks/useMediaQuery';
 import HeaderLinksMobile from './HeaderLinksMobile';
 
