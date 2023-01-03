@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderLinks from './HeaderLinks';
+import HeaderLinks from './HeaderLinkss';
 
 export default function Footer() {
   return (
