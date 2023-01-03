@@ -55,7 +55,7 @@ export default function Home() {
       <Blade
         image="/images/carryingBag.png"
         headline="Exclusive Vendors"
-        text="We partner with best-in-class trash providers to source artisinal debris and detritus."
+        text="We partner with best-in-class trash providers to source artisinal debris and detritus. Reduced, Re-used, and Upcycled packages are available."
       />
       <Blade
         image="/images/walkingAway.png"

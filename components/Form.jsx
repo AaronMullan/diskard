@@ -5,7 +5,7 @@ function Input({ type, name }) {
   const capitalizedName = name[0].toUpperCase() + name.slice(1);
   return (
     <>
-      <label htmlFor={name} style={{ color: '#525254' }}>{capitalizedName}</label>
+      <label htmlFor={name} style={{ color: '#525254', padding: '10px 0 5px' }}>{capitalizedName}</label>
       <input
         type={type}
         name={name}
@@ -66,24 +66,33 @@ export default function Form() {
 
   return (
     <div style={{
-      display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
     }}
     >
       <div style={{
-        width: '100%', maxWidth: '600px', color: '#525254', padding: '4rem', h1: { fontsize: '31px' },
+        width: '100%',
+        maxWidth: '600px',
+        color: '#525254',
+        padding: '4rem',
+        h1: { fontsize: '31px' },
+        backgroundColor: '#ffffff',
       }}
       >
         <h1>Get in touch</h1>
         <form style={{
           display: 'flex',
           flexDirection: 'column',
+          backgroundColor: '#ffffff',
         }}
         >
           <div style={{ display: 'flex', flexDirection: 'column', paddingBottom: '2rem' }}>
             <Input name="name" type="text" />
             <Input name="email" type="text" />
             <Input name="subject" type="text" />
-            <Input name="how can we help" type="textarea" />
+            <Input name="how can we help?" type="textarea" />
           </div>
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button type="submit" buttonText="send" onSubmit={unsubmit} />

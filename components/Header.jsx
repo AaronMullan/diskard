@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu';
 import Button from './Button';
 import styles from './header.module.css';
 import HeaderLinks from './HeaderLinks';
@@ -44,20 +43,7 @@ export default function Header() {
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <div>
             {!isDesktop && <HeaderLinksMobile isDesktop={isDesktop} /> }
-
           </div>
-          {/* <div style={{
-            height: '2rem', display: isDesktop ? 'none' : 'inline-block', paddingRight: '5px', flexBasis: '120px',
-          }}
-          >
-            <Image
-              src="/images/burger.svg"
-              height={36}
-              width={36}
-              alt="menu"
-            />
-
-          </div> */}
           <div style={{
             height: '2rem', width: '120px', display: 'inline-block', marginLeft: isDesktop ? null : '20px',
           }}

@@ -12,7 +12,7 @@ export default function Hero() {
         <p style={{ color: 'white', lineHeight: '4em' }}>Want to make an upgrade to your trash collection?</p>
         <h3 style={{ color: 'white' }}>Find out about bespoke junk delivery to save time and money.</h3>
         <div>
-          <Button buttonText="Learn More" isLight />
+          <Button buttonText="Learn More" isLight url="/contact/" />
         </div>
       </div>
     </div>
