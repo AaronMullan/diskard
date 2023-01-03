@@ -1,11 +1,10 @@
 /* eslint-disable max-len */
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import { gsap } from 'gsap';
+// import { gsap } from 'gsap';
 import Layout, { siteTitle } from '../components/layout';
 import Hero from '../components/Hero';
 import Blade from '../components/Blade';
-import Callout from '../components/Callout';
 
 export default function Categories() {
   return (
