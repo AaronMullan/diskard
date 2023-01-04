@@ -1,31 +1,12 @@
 /* eslint-disable max-len */
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import Head from 'next/head';
-import { gsap } from 'gsap';
 import Layout, { siteTitle } from '../components/layout';
 import Hero from '../components/Hero';
 import Blade from '../components/Blade';
 import Callout from '../components/Callout';
 
 export default function Home() {
-  const heroRef = useRef();
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      // Our animations can use selector text like ".box"
-      // this will only select '.box' elements that are children of the component
-      gsap.to('.box', {
-        delay: 0.8,
-        top: '-100%',
-        ease: 'expo.inOut',
-      });
-      // or we can use refs
-      // gsap.to(circle.current, { rotation: 360 });
-    }, heroRef); // <- IMPORTANT! Scopes selector text
-
-    return () => ctx.revert(); // cleanup
-  }, []);
-
   return (
     <Layout home>
       <Head>
