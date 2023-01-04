@@ -9,7 +9,7 @@ export default function Hero({
   const shouldReverse = reverse ? 'row-reverse' : 'row';
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const flexDirection = isDesktop ? shouldReverse : 'column';
-
+  console.log(image);
   return (
     <div style={{
       color: '#525254',
@@ -35,6 +35,7 @@ export default function Hero({
           src={image}
           width={350}
           height={350}
+          alt="test"
         />
       </div>
       <div style={{

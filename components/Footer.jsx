@@ -9,12 +9,9 @@ export default function Footer() {
       color: 'white',
       display: 'grid',
       gridTemplateColumns: '1fr 1fr',
-      // display: 'flex',
-      // flexDirection: 'row',
     }}
     >
       <div style={{
-        // width: '50%',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'start',
@@ -44,6 +41,16 @@ export default function Footer() {
           style={{ color: '#009AA8' }}
         >
           Visit Portfolio
+        </a>
+        <br />
+        <br />
+        <a
+          href="https://github.com/AaronMullan/diskard"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#009AA8' }}
+        >
+          See Code For This Site
         </a>
       </div>
     </div>

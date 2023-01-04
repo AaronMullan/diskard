@@ -32,7 +32,11 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <div className="box">
-        <Hero />
+        <Hero
+          headline="Premium Waste, Personalized."
+          text="Diskârd is an innovative premium garbage arbitrage service providing our clients with exlusive access to top-tier rubbish."
+          image="/images/premium.png"
+        />
       </div>
       <div style={{
         textAlign: 'center',

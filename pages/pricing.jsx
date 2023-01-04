@@ -20,7 +20,7 @@ export default function Categories() {
       <Blade
         image="/images/garbodor.png"
         headline="Diskârd membership includes:"
-        text="Our exclusive license of Trashalanche&trade; technology from Garbodor Enterprises enables potentially devastating attacks, particularly valuable for endgame set pieces."
+        text="Our exclusive license of Trashalanche&trade; technology from Garbodor Enterprises unleashes powerful ditritusportunities. Who knows what you'll create!"
         bladeStyles={{ backgroundColor: '#FFEADA' }}
       />
     </Layout>
