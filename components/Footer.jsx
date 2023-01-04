@@ -4,54 +4,65 @@ import HeaderLinks from './HeaderLinks';
 export default function Footer() {
   return (
     <div style={{
+      position: 'absolute',
+      left: 0,
       padding: '5vh 15vw',
+      width: '100%',
       backgroundColor: '#2c2323',
       color: 'white',
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
+      display: 'flex',
+      justifyContent: 'center',
     }}
     >
       <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'start',
-        justifyContent: 'start',
-        margin: '0px',
-        backgroundColor: '#2c2323',
-
+        width: '100%',
+        maxWidth: '1200px',
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
       }}
       >
-        <HeaderLinks isFooter />
-      </div>
-      <div style={{ textAlign: 'end', lineHeight: '2em', margin: '10px' }}>
-        <p>Hire Me!</p>
-        <a
-          href="https://www.linkedin.com/in/aaron-mullan/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#009AA8' }}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'start',
+          justifyContent: 'start',
+          margin: '0px',
+          backgroundColor: '#2c2323',
+
+        }}
         >
-          See profile
-        </a>
-        <br />
-        <a
-          href="https://aaronmullan.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#009AA8' }}
-        >
-          Visit Portfolio
-        </a>
-        <br />
-        <br />
-        <a
-          href="https://github.com/AaronMullan/diskard"
-          target="_blank"
-          rel="noopener noreferrer"
-          style={{ color: '#009AA8' }}
-        >
-          See Code For This Site
-        </a>
+          <HeaderLinks isFooter />
+        </div>
+        <div style={{ textAlign: 'end', lineHeight: '2em', margin: '10px' }}>
+          <p>Hire Me!</p>
+          <a
+            href="https://www.linkedin.com/in/aaron-mullan/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#009AA8' }}
+          >
+            See profile
+          </a>
+          <br />
+          <a
+            href="https://aaronmullan.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#009AA8' }}
+          >
+            Visit Portfolio
+          </a>
+          <br />
+          <br />
+          <a
+            href="https://github.com/AaronMullan/diskard"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#009AA8' }}
+          >
+            Site Code
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export default function Categories() {
       </Head>
 
       <Blade
-        image="/images/clothesPile.png"
+        image="/images/unknowables.png"
         headline="Our ways are deliberately opaque."
         text="We are occult overlords, esotericism is our lifeblood. Initiation into our ranks involves a Byzantine sequence of rituals and incantations. Members who complete the 7th rite will enter the ranks of the Garbageri."
         reverse

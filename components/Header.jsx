@@ -12,59 +12,70 @@ export default function Header() {
   return (
     <div style={{
       display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'center',
+      alignItems: 'center',
+      width: '100%',
       height: '80px',
       margin: '0px 20px',
-      h1: {
-        fontWeight: 'bold',
-      },
     }}
     >
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Domine"
-      />
-      <link
-        rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Sen"
-      />
-      <header
-        className={styles.header}
-        style={{
-          width: '100%',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        width: '100%',
+        justifyContent: 'space-between',
+        maxWidth: '1200px',
+
+        h1: {
+          fontWeight: 'bold',
+        },
+      }}
       >
-        <div style={{ display: 'flex', flexDirection: 'row' }}>
-          <div>
-            {!isDesktop && <HeaderLinksMobile isDesktop={isDesktop} /> }
-          </div>
-          <div style={{
-            height: '2rem', width: '120px', display: 'inline-block', marginLeft: isDesktop ? null : '20px',
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Domine"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sen"
+        />
+        <header
+          className={styles.header}
+          style={{
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
           }}
-          >
-            <Link href="/">
-              <Image
-                src="/images/DISKARD.png"
-                height={32}
-                width={120}
-                minWidth={120}
-                alt="Diskard Logo"
-                priority
-              />
-            </Link>
+        >
+          <div style={{ display: 'flex', flexDirection: 'row' }}>
+            <div>
+              {!isDesktop && <HeaderLinksMobile isDesktop={isDesktop} /> }
+            </div>
+            <div style={{
+              height: '2rem', width: '120px', display: 'inline-block', marginLeft: isDesktop ? null : '20px',
+            }}
+            >
+              <Link href="/">
+                <Image
+                  src="/images/DISKARD.png"
+                  height={32}
+                  width={120}
+                  minWidth={120}
+                  alt="Diskard Logo"
+                  priority
+                />
+              </Link>
+            </div>
           </div>
-        </div>
-        <HeaderLinks isDesktop={isDesktop} />
-        <div>
-          <Button buttonText="get started" />
-        </div>
-      </header>
+          <HeaderLinks isDesktop={isDesktop} />
+          <div>
+            <Button buttonText="get started" />
+          </div>
+        </header>
+      </div>
     </div>
   );
 }

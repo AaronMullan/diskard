@@ -1,9 +1,18 @@
 .container {
-    /* max-width: 36rem; */
+  /* max-width: 1200px; */
+    align-items: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  
     /* padding: 0 1rem; */
     /* margin: 3rem auto 6rem; */
   }
-  
+  .inner{
+    margin: 0 auto;
+    /* max-width: 1200px; */
+  }
   .header {
     display: flex;
     flex-direction: column;
