@@ -33,7 +33,7 @@ export default function Categories() {
       <Blade
         image="/images/walkingAway2.png"
         headline="Big Chunky ones, too"
-        text="Our exclusive network of junksmiths is able to accomodate the largest of collectables. With 5 business days notice, we can deliver a palette of broken, incompatable Lionel and American Flyer trains and tracks to your porch. Within 4 weeks we have a '68 Porsche on blocks in front of your house."
+        text="Our exclusive network of junksmiths is able to accomodate the largest of collectables. With 5 business days notice, we can deliver a palette of broken, incompatable Lionel and American Flyer trains and tracks to your porch. Within 4 weeks we can have a '68 Porsche on blocks in front of your house."
         reverse
       />
     </Layout>
