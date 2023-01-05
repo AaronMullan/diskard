@@ -3,7 +3,7 @@ import Link from 'next/link';
 import getButtonStyles from './buttonStyles';
 
 export default function Button({
-  buttonText, isLight, type, url = '/',
+  buttonText, isLight, type, url = '/contact',
 }) {
   const buttonStyles = getButtonStyles({ isLight });
   const isSubmit = type === 'submit';

@@ -18,7 +18,7 @@ export default function Categories() {
         reverse
       />
       <Blade
-        image="/images/garbodor.png"
+        image="/images/garbodor.jpg"
         headline="Diskârd membership includes:"
         text="Our exclusive license of Trashalanche&trade; technology from Garbodor Enterprises unleashes powerful detritusportunities. Who knows what you'll create!"
         bladeStyles={{ backgroundColor: '#FFEADA' }}
