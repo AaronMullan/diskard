@@ -26,6 +26,7 @@ export default function Header() {
         width: '100%',
         justifyContent: 'space-between',
         maxWidth: '1200px',
+        padding: '40px',
 
         h1: {
           fontWeight: 'bold',

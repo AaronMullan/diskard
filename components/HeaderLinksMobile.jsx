@@ -6,7 +6,6 @@ import headerLinkData from '../data/headerLinksData';
 export default function HeaderLinksMobile() {
   return (
     <Menu styles={{
-    //   display: isDesktop ? 'none' : 'inline',
       bmBurgerButton: {
         position: 'relative',
         width: '36px',
@@ -14,7 +13,6 @@ export default function HeaderLinksMobile() {
         top: '3px',
       },
       bmBurgerBars: {
-        // display: isDesktop ? 'none' : 'inline',
         background: '#373a47',
       },
       bmBurgerBarsHover: {
@@ -22,7 +20,6 @@ export default function HeaderLinksMobile() {
       },
       bmMenu: {
         background: '#373a47',
-        // padding: '0 1.5em 0',
         position: 'fixed',
         fontSize: '1.15em',
         width: '260px',

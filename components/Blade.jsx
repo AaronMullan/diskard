@@ -35,6 +35,7 @@ export default function Hero({
           justifyContent: reverse ? 'right' : 'left',
           alignItems: 'center',
           borderRadius: '.15rem',
+          padding: '48px',
         }}
         >
           <Image
@@ -45,7 +46,7 @@ export default function Hero({
           />
         </div>
         <div style={{
-          padding: isDesktop ? '40px' : '16px',
+          padding: isDesktop ? '48px' : '16px',
           width: isDesktop ? '50%' : 'auto',
           textAlign: 'left',
           display: 'flex',

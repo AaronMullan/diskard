@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Layout from '../components/layout';
 import CardGrid from '../components/CardGrid';
 import ContactBar from '../components/ContactBar';
+import faqCardData from '../data/faqCardData';
 
 export default function Questions() {
   return (
@@ -28,7 +29,7 @@ export default function Questions() {
           </div>
         </div>
       </div>
-      <CardGrid />
+      <CardGrid data={faqCardData} />
     </Layout>
   );
 }

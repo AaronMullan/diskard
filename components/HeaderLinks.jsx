@@ -3,12 +3,6 @@ import Link from 'next/link';
 import headerLinksData from '../data/headerLinksData';
 
 export default function HeaderLinks({ isFooter, isDesktop }) {
-  // const headerLinkData = [
-  //   { text: 'How it works', link: '/#how-it-works' },
-  //   { text: 'What we bring', link: '/categories' },
-  //   { text: 'Pricing', link: 'pricing' },
-  //   { text: 'Opacity', link: 'opacity' },
-  //   { text: 'Questions?', link: 'questions' }];
   const color = isFooter ? 'white' : '#525254';
   return (
     <div

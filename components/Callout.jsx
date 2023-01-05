@@ -6,7 +6,6 @@ import useMediaQuery from '../hooks/useMediaQuery';
 export default function Hero() {
   const isDesktop = useMediaQuery('(min-width: 960px)');
   return (
-
     <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
       <div style={{
         backgroundColor: '#00BCAA', padding: '40px 20vw', width: '100%', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center',

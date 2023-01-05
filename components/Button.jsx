@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-
 import getButtonStyles from './buttonStyles';
 
 export default function Button({
