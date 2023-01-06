@@ -9,6 +9,7 @@ export default function Hero({
   const shouldReverse = reverse ? 'row-reverse' : 'row';
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const flexDirection = isDesktop ? shouldReverse : 'column';
+  const desktopJustification = reverse ? 'right' : 'left';
   return (
     <div style={{
       color: '#525254',
@@ -32,7 +33,7 @@ export default function Hero({
           width: isDesktop ? '50%' : 'auto',
           position: 'relative',
           display: 'flex',
-          justifyContent: reverse ? 'right' : 'left',
+          justifyContent: isDesktop ? desktopJustification : 'center',
           alignItems: 'center',
           borderRadius: '.15rem',
           padding: '48px',
