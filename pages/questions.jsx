@@ -14,7 +14,7 @@ export default function Questions() {
       <div>
         <div style={{
           backgroundColor: '#FDF4ED',
-          height: '344px',
+          minHeight: '344px',
           color: '#525254',
           textAlign: 'center',
           paddingTop: '60px',

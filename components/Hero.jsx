@@ -9,7 +9,11 @@ export default function Hero({
   const isDesktop = useMediaQuery('(min-width: 960px)');
   return (
     <div style={{
-      display: 'flex', flexDirection: isDesktop ? 'row' : 'column', width: '100%', color: '#525254',
+      display: 'flex',
+      flexDirection: isDesktop ? 'row' : 'column',
+      alignItems: 'center',
+      width: '100%',
+      color: isDesktop ? '#525254' : '#ffffff',
     }}
     >
       <div style={{
@@ -31,23 +35,36 @@ export default function Hero({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        backgroundImage: isDesktop ? null : `url(${image})`,
+        backgroundRepeat: 'no-repeat',
       }}
       >
-        <h1>{headline}</h1>
-        <p>{text}</p>
+        <div style={{
+          backgroundColor: isDesktop ? null : 'hsla(0,0%,0%, .5)',
+        }}
+        >
+          <h1>{headline}</h1>
+          <p>{text}</p>
+        </div>
       </div>
       <div style={{
-        width: isDesktop ? '50%' : '100%',
+        height: isDesktop ? '80vh' : '50vw',
+        width: '50%',
         position: 'relative',
-        display: 'flex',
-        alightItems: 'center',
+        display: isDesktop ? 'flex' : 'none',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundImage: isDesktop ? `url(${image})` : null,
+        backgroundSize: 'cover',
       }}
       >
-        <Image
+        {/* <Image
           src={image}
-          fill
+          // fill
+          height={600}
+          width={600}
           style={{ ...heroImageStyles }}
-        />
+        /> */}
       </div>
     </div>
 

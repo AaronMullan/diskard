@@ -15,7 +15,7 @@ export default function Categories() {
       <Blade
         image="/images/unknowables.png"
         headline="Our ways are deliberately opaque."
-        text="We are occult overlords, sibyllinism is our lifeblood. Initiation into our ranks involves a Byzantine sequence of rituals and incantations. Members who complete the 7th rite will enter the ranks of the Garbageri."
+        text="We are occult overlords, sibyllinism is our lifeblood. Initiation into our host involves a Byzantine sequence of rituals and incantations. Members who complete the 7th rite will enter the ranks of the Garbageri."
         reverse
       />
       <Blade

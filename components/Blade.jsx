@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import useMediaQuery from '../hooks/useMediaQuery';
+import randomBorderRadiusGenerator from '../utils/randomBorderRadiusGenerator';
 
 export default function Hero({
   image, headline, text, reverse, bladeStyles,
@@ -10,6 +11,9 @@ export default function Hero({
   const isDesktop = useMediaQuery('(min-width: 960px)');
   const flexDirection = isDesktop ? shouldReverse : 'column';
   const desktopJustification = reverse ? 'right' : 'left';
+  const randomBorderRadius = randomBorderRadiusGenerator();
+  const randomOtherBorderRadius = randomBorderRadiusGenerator();
+  const randomImageRadius = randomBorderRadiusGenerator();
   return (
     <div style={{
       color: '#525254',
@@ -39,11 +43,35 @@ export default function Hero({
           padding: '48px',
         }}
         >
+          <div style={{
+            position: 'absolute',
+            height: '300px',
+            width: '300px',
+            minWidth: '350px',
+            // left: '1000vu',
+            background: '#00bcaa',
+            zIndex: -2,
+            borderRadius: randomOtherBorderRadius,
+          }}
+          />
+          <div style={{
+            position: 'absolute',
+            height: '300px',
+            width: '300px',
+            minWidth: '350px',
+            background: '#F5B587',
+            zIndex: -1,
+            borderRadius: randomBorderRadius,
+          }}
+          />
           <Image
             src={image}
             width={350}
             height={350}
             alt="test"
+            style={{
+              borderRadius: randomImageRadius,
+            }}
           />
         </div>
         <div style={{

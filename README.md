@@ -2,7 +2,7 @@
 
 The deploy of this site is at: https://diskard.vercel.app/
 
-The Diskârd site is built with Next.js. It bears a resemblance to ridwell.com.  The images for this site were made with DALL-E.
+The Diskârd site is built with Next.js. It bears a resemblance to ridwell.com.  Images by DALL-E.
 
 ## To run locally:
 
