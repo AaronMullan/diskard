@@ -1,10 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
-import Image from 'next/image';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 export default function Hero({
-  image, headline, text, heroImageStyles,
+  image, headline, text,
 }) {
   const isDesktop = useMediaQuery('(min-width: 960px)');
   return (
@@ -57,16 +56,7 @@ export default function Hero({
         backgroundImage: isDesktop ? `url(${image})` : null,
         backgroundSize: 'cover',
       }}
-      >
-        {/* <Image
-          src={image}
-          // fill
-          height={600}
-          width={600}
-          style={{ ...heroImageStyles }}
-        /> */}
-      </div>
+      />
     </div>
-
   );
 }
