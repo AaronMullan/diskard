@@ -24,8 +24,8 @@ export default function Hero({
       justifyContent: 'center',
       flexDirection,
       width: '100%',
-      margin: '2rem 0 0',
-      padding: '2rem',
+      // margin: '2rem 0 0',
+      padding: '2rem 0',
       boxShadow: 'rgba(149, 157, 165, 0.05) 0px 8px 24px',
       ...bladeStyles,
     }}

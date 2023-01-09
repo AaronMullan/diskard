@@ -16,7 +16,6 @@ export default function Header() {
       alignItems: 'center',
       width: '100%',
       height: '80px',
-      margin: '0px 20px',
     }}
     >
       <div style={{
@@ -26,7 +25,7 @@ export default function Header() {
         width: '100%',
         justifyContent: 'space-between',
         maxWidth: '1200px',
-        padding: '40px',
+        padding: isDesktop ? '40px' : '20px',
 
         h1: {
           fontWeight: 'bold',
