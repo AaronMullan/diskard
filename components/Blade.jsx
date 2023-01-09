@@ -14,6 +14,9 @@ export default function Hero({
   const randomBorderRadius = randomBorderRadiusGenerator();
   const randomOtherBorderRadius = randomBorderRadiusGenerator();
   const randomImageRadius = randomBorderRadiusGenerator();
+  const imageSize = isDesktop ? 350 : 250;
+  const backGroundSize = isDesktop ? '300px' : '250px';
+
   return (
     <div style={{
       color: '#525254',
@@ -45,10 +48,9 @@ export default function Hero({
         >
           <div style={{
             position: 'absolute',
-            height: '300px',
-            width: '300px',
-            minWidth: '350px',
-            // left: '1000vu',
+            height: backGroundSize,
+            width: backGroundSize,
+            // minWidth: '350px',
             background: '#00bcaa',
             zIndex: -2,
             borderRadius: randomOtherBorderRadius,
@@ -56,9 +58,9 @@ export default function Hero({
           />
           <div style={{
             position: 'absolute',
-            height: '300px',
-            width: '300px',
-            minWidth: '350px',
+            height: backGroundSize,
+            width: backGroundSize,
+            // minWidth: '350px',
             background: '#F5B587',
             zIndex: -1,
             borderRadius: randomBorderRadius,
@@ -66,8 +68,8 @@ export default function Hero({
           />
           <Image
             src={image}
-            width={350}
-            height={350}
+            width={imageSize}
+            height={imageSize}
             alt="test"
             style={{
               borderRadius: randomImageRadius,

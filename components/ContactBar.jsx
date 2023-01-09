@@ -1,34 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function ContactBar() {
-  const contactCardData = [
-    {
-      text: 'Fill out our',
-      linkText: 'contact form',
-      href: '/contact',
-      image: '/images/form.svg',
-    },
-    {
-      text: 'Email us',
-      linkText: 'help@diskard.com',
-      href: 'mailto:aaroncmullan@gmail.com',
-      image: '/images/mail.svg',
-    },
-    {
-      text: 'Text us',
-      linkText: '503-555-1212',
-      href: 'sms:+9179680309',
-      image: '/images/text.svg',
-    },
-  ];
-
+export default function ContactBar({ data }) {
   return (
     <div style={{
       display: 'flex', width: '100%', justifyContent: 'space-between', padding: '40px 0px',
     }}
     >
-      {contactCardData.map((el) => (
+      {data.map((el) => (
         <ContactCard
           text={el.text}
           href={el.href}

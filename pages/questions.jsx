@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import CardGrid from '../components/CardGrid';
 import ContactBar from '../components/ContactBar';
 import faqCardData from '../data/faqCardData';
+import contactCardData from '../data/contactCardData';
 
 export default function Questions() {
   return (
@@ -25,7 +26,7 @@ export default function Questions() {
           <div style={{ maxWidth: '574px', width: '100%' }}>
             <h1>Ask us Anything!</h1>
             <p style={{ fontSize: '24px' }}>Just saying hi? That’s great too!</p>
-            <ContactBar />
+            <ContactBar data={contactCardData} />
           </div>
         </div>
       </div>

@@ -25,7 +25,6 @@ export default function Hero({
         borderRadius: '0% 0% 76% 56% / 0% 0% 74% 15% ',
       }}
       />
-
       <div style={{
         padding: '40px',
         height: isDesktop ? '80vh' : '400px',
@@ -39,10 +38,16 @@ export default function Hero({
       }}
       >
         <div style={{
-          backgroundColor: isDesktop ? null : 'hsla(0,0%,0%, .5)',
+          backgroundColor: isDesktop ? null : 'hsla(0,0%,0%, .25)',
         }}
         >
-          <h1>{headline}</h1>
+          <h1 style={{
+            fontSize: isDesktop ? null : '32px',
+          }}
+          >
+            {headline}
+
+          </h1>
           <p>{text}</p>
         </div>
       </div>
