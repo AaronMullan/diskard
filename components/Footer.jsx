@@ -53,7 +53,6 @@ export default function Footer() {
             Visit Portfolio
           </a>
           <br />
-          <br />
           <a
             href="https://github.com/AaronMullan/diskard"
             target="_blank"
@@ -61,6 +60,18 @@ export default function Footer() {
             style={{ color: '#009AA8' }}
           >
             Site Code
+          </a>
+          <br />
+          Apologies to
+          {' '}
+
+          <a
+            href="https://www.ridwell.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#f46323' }}
+          >
+            Ridwell
           </a>
         </div>
       </div>

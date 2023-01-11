@@ -63,7 +63,6 @@ export default function Header() {
                   src="/images/DISKARD.png"
                   height={32}
                   width={120}
-                  minWidth={120}
                   alt="Diskard Logo"
                   priority
                 />

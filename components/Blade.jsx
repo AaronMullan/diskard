@@ -5,7 +5,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import randomBorderRadiusGenerator from '../utils/randomBorderRadiusGenerator';
 
 export default function Hero({
-  image, headline, text, reverse, bladeStyles,
+  image, headline, text, reverse, bladeStyles, altText = 'alternate text required',
 }) {
   const shouldReverse = reverse ? 'row-reverse' : 'row';
   const isDesktop = useMediaQuery('(min-width: 960px)');
@@ -25,7 +25,7 @@ export default function Hero({
       flexDirection,
       width: '100%',
       // margin: '2rem 0 0',
-      padding: '2rem 0',
+      padding: '2rem 0 0',
       boxShadow: 'rgba(149, 157, 165, 0.05) 0px 8px 24px',
       ...bladeStyles,
     }}
@@ -50,7 +50,6 @@ export default function Hero({
             position: 'absolute',
             height: backGroundSize,
             width: backGroundSize,
-            // minWidth: '350px',
             background: '#00bcaa',
             zIndex: -2,
             borderRadius: randomOtherBorderRadius,
@@ -60,7 +59,6 @@ export default function Hero({
             position: 'absolute',
             height: backGroundSize,
             width: backGroundSize,
-            // minWidth: '350px',
             background: '#F5B587',
             zIndex: -1,
             borderRadius: randomBorderRadius,
@@ -70,7 +68,7 @@ export default function Hero({
             src={image}
             width={imageSize}
             height={imageSize}
-            alt="test"
+            alt={altText}
             style={{
               borderRadius: randomImageRadius,
             }}

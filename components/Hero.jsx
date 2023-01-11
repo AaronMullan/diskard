@@ -3,7 +3,7 @@ import React from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
 
 export default function Hero({
-  image, headline, text,
+  image, headline, text, altText = 'need alt text',
 }) {
   const isDesktop = useMediaQuery('(min-width: 960px)');
   return (
@@ -34,6 +34,7 @@ export default function Hero({
         flexDirection: 'column',
         justifyContent: 'center',
         backgroundImage: isDesktop ? null : `url(${image})`,
+        'aria-label': isDesktop ? null : altText,
         backgroundRepeat: 'no-repeat',
       }}
       >
@@ -59,6 +60,7 @@ export default function Hero({
         alignItems: 'center',
         justifyContent: 'center',
         backgroundImage: isDesktop ? `url(${image})` : null,
+        'aria-label': isDesktop ? altText : null,
         backgroundSize: 'cover',
       }}
       />
