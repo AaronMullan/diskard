@@ -8,18 +8,4 @@ The frontend is mostly inline styles, with some module.css in there just for var
 
 Form submissions are going to supabase, and the data can be seen at '/contacts/'.
 
-
-
-## To run locally:
-
-Clone this repo.
-
-Then, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Apart from that the data is just static.  An example of a site with data fetched from a CMS is at https://github.com/AaronMullan/tables.
