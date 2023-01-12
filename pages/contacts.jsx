@@ -38,7 +38,7 @@ export default function Contacts() {
                 {/* <td>
                   {id}
                 </td> */}
-                <td style={{ borderBottom: '1px solid #009AA8' }}>
+                <td style={{ borderBottom: '1px solid #009AA8', marginRight: '10px' }}>
                   {firstName}
                   {' '}
                   {lastName}
