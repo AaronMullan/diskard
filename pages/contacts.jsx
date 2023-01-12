@@ -26,8 +26,8 @@ export default function Contacts() {
         <table>
           <thead>
             <tr>
-              <th>id</th>
-              <th>First Name</th>
+              <th>Name</th>
+              <th>Message</th>
             </tr>
           </thead>
           <tbody>
@@ -35,16 +35,15 @@ export default function Contacts() {
               id, first_name: firstName, last_name: lastName, message,
             }) => (
               <tr key={id}>
-                <td>
+                {/* <td>
                   {id}
-                </td>
-                <td>
+                </td> */}
+                <td style={{ borderBottom: '1px solid #009AA8' }}>
                   {firstName}
-                </td>
-                <td>
+                  {' '}
                   {lastName}
                 </td>
-                <td>
+                <td style={{ borderBottom: '1px solid #009AA8' }}>
                   {message}
                 </td>
               </tr>
