@@ -32,14 +32,6 @@ export default function Header() {
         },
       }}
       >
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Domine"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Sen"
-        />
         <header
           className={styles.header}
           style={{

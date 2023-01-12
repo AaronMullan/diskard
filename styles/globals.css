@@ -43,17 +43,8 @@ img {
   display: block;
 }
 
-h1, h2, h3, p {
-  /* color: #525254; */
-  font-family: 'Domine'
-}
-
 h1, h2, h3 {
   font-family: 'Domine'
-}
-
-p, a, label {
-  font-family: 'Sen'
 }
 
 h1 {
@@ -63,7 +54,6 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
-  /* line-height: 3rem; */
 }
 
 h3 {
